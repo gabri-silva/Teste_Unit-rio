@@ -14,7 +14,3 @@ def calcular_dias_passados(dd, mm, aa) -> int:
         raise ValueError("A data informada deve estar no passado.")
 
     return (hoje - data_passada).days
-
-# Função para calcular a idade daqui a um ano
-def calcular_idade_futura(dd, mm, aa) -> int:
-    return calcular_idade(dd, mm, aa) + 1
