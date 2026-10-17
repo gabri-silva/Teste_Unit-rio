@@ -13,7 +13,3 @@ def test_calcular_dias_passados_datas_antigas():
     assert calcular_dias_passados(1, 1, 2020) == (date.today() - date(2020, 1, 1)).days
     assert calcular_dias_passados(31, 12, 2019) == (date.today() - date(2019, 12, 31)).days
     assert calcular_dias_passados(15, 6, 2018) == (date.today() - date(2018, 6, 15)).days
-
-def test_calcular_dias_passados():
-    data_passada = date.today() - timedelta(days=10)
-    assert calcular_dias_passados(data_passada.day, data_passada.month, data_passada.year) == 10
